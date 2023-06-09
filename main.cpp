@@ -1,6 +1,23 @@
 #include "raylib.h"
 
 //------------------------------------------------------------------------------------
+// Methods
+//------------------------------------------------------------------------------------
+void Input() {
+    if (IsKeyPressed(KEY_ESCAPE)) {
+
+    }
+}
+
+void Update() {
+    Input();
+}
+
+void Draw() {
+
+}
+
+//------------------------------------------------------------------------------------
 // Program main entry point
 //------------------------------------------------------------------------------------
 int main(void)
@@ -18,18 +35,18 @@ int main(void)
     // Main game loop
     while (!WindowShouldClose())    // Detect window close button or ESC key
     {
-        // Update
+        // Update variables
         //----------------------------------------------------------------------------------
-        // TODO: Update your variables here
+        Update();
         //----------------------------------------------------------------------------------
 
         // Draw
         //----------------------------------------------------------------------------------
         BeginDrawing();
 
-        ClearBackground(RAYWHITE);
+        ClearBackground(BLACK);
 
-        DrawText("Congrats! You created your first window!", 190, 200, 20, LIGHTGRAY);
+        Draw();
 
         EndDrawing();
         //----------------------------------------------------------------------------------
