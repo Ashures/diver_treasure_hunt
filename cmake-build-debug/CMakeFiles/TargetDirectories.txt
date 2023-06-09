@@ -1,0 +1,3 @@
+/home/ashures/CLionProjects/diver_treasure_hunt/cmake-build-debug/CMakeFiles/diver_treasure_hunt.dir
+/home/ashures/CLionProjects/diver_treasure_hunt/cmake-build-debug/CMakeFiles/edit_cache.dir
+/home/ashures/CLionProjects/diver_treasure_hunt/cmake-build-debug/CMakeFiles/rebuild_cache.dir
