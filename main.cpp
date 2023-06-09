@@ -1,12 +1,15 @@
 #include "raylib.h"
+#include <iostream>
+
+//------------------------------------------------------------------------------------
+// Global variables
+//------------------------------------------------------------------------------------
 
 //------------------------------------------------------------------------------------
 // Methods
 //------------------------------------------------------------------------------------
 void Input() {
-    if (IsKeyPressed(KEY_ESCAPE)) {
 
-    }
 }
 
 void Update() {
@@ -14,7 +17,11 @@ void Update() {
 }
 
 void Draw() {
+    Vector2 screen {(float) GetScreenWidth(), (float) GetScreenHeight()};
+    Vector2 screenCentre {screen.x / 2, screen.y / 2};
 
+    DrawLineEx(Vector2 {(float) screenCentre.x + 20, screenCentre.y - 10 }, Vector2 {screenCentre.x, screenCentre.y}, 4.0f, GREEN);
+    DrawLineEx(Vector2 {(float) screenCentre.x + 20, screenCentre.y + 10 }, Vector2 {screenCentre.x, screenCentre.y}, 4.0f, GREEN);
 }
 
 //------------------------------------------------------------------------------------
@@ -24,10 +31,7 @@ int main(void)
 {
     // Initialization
     //--------------------------------------------------------------------------------------
-    const int screenWidth = 800;
-    const int screenHeight = 450;
-
-    InitWindow(screenWidth, screenHeight, "raylib [core] example - basic window");
+    InitWindow(800, 450, "A Sparkle At Sea | Made by Ashures");
 
     SetTargetFPS(60);               // Set our game to run at 60 frames-per-second
     //--------------------------------------------------------------------------------------
